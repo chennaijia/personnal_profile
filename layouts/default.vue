@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <div class="flex justify-around flex-row item-center">
-            <slot />
-        </div>
+    <div class="max-w-full h-full">
+        <slot />
     </div>
 </template>
