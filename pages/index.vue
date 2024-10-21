@@ -20,6 +20,11 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 px-1">
+                    <div class="space-y-6" action="#" method="POST">
                         <div class="flex items-center justify-between">
                             <label for="password" class="block text-sm font-medium leading-6 text-gray-600">公開連結</label>
                         </div>
@@ -35,7 +40,7 @@
                                 <p class="text-gray-700">
                                     ～～網址～～
                                 </p>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
