@@ -19,21 +19,7 @@
                 </p>
               </div>
           </div>
-
-          <link_component
-            :first_link="{
-              href: 'https://tailwindcss.com',
-              onClick: handleFirstClick,
-            }"
-            :second_link="{
-              href: 'https://www.github.com',
-              onClick: handleSecondClick,
-            }"
-            :third_link="{
-              href: 'https://www.nccu.edu.tw',
-              onClick: handleThirdClick,
-            }"
-          />
+          <link_component :links="links" />
         </div>
       </div>
     </div>
@@ -46,5 +32,19 @@
 <script setup>
   const route = useRoute()
   const { id } = route.params
+</script>
+
+<script>
+  export default {
+    data() {
+      return {
+        links: [
+          { href: 'https://tailwindcss.com', onClick: () => console.log('Clicked on example1!') },
+          { href: 'https://www.github.com', onClick: () => console.log('Clicked on example2!') },
+          { href: 'https://www.nccu.edu.tw', onClick: () => console.log('Clicked on example3!') },
+        ],
+      };
+    },
+  };
 </script>
 
